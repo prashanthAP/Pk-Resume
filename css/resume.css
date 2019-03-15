@@ -120,11 +120,12 @@ a:hover, a:focus, a:active {
 }
 #scrollBtn{
   position: fixed;
-  bottom: 12px;
-  right: 12px;
-  font-size: 32px;
+  bottom: 18px;
+  right: 18px;
+  font-size: 36px;
   cursor: pointer;
-  color: #38ef7d;
+  background: #fff;
+  color: #11998e;
   display: none;
 }
 
