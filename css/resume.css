@@ -35,10 +35,6 @@ section.resume-section {
   padding-bottom: 5rem !important;
   max-width: 75rem;
 }
-section.resume-section:last-child{
-  border-bottom: 3px solid;
-  border-color:linear-gradient(to right,  #11998e, #38ef7d);
-}
 
 section.resume-section .resume-item .resume-date {
   min-width: none;
@@ -124,9 +120,9 @@ a:hover, a:focus, a:active {
 }
 #scrollBtn{
   position: fixed;
-  bottom: 8px;
-  right: 8px;
-  font-size: 28px;
+  bottom: 12px;
+  right: 12px;
+  font-size: 32px;
   cursor: pointer;
   color: #38ef7d;
   display: none;
