@@ -35,6 +35,10 @@ section.resume-section {
   padding-bottom: 5rem !important;
   max-width: 75rem;
 }
+section.resume-section:last-child{
+  border-bottom: 3px solid;
+  border-color:linear-gradient(to right,  #11998e, #38ef7d);
+}
 
 section.resume-section .resume-item .resume-date {
   min-width: none;
@@ -63,7 +67,7 @@ p.lead {
   font-size: 1rem;
 }
 .subheading-tagLine{
-  border-top:1px solid #38ef7d;  
+  border-top:1px solid #38ef7d;
   width: 50%
 }
 
@@ -118,20 +122,30 @@ a {
 a:hover, a:focus, a:active {
   color: #824027;
 }
+#scrollBtn{
+  position: fixed;
+  bottom: 8px;
+  right: 8px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #38ef7d;
+  display: none;
+}
 
 /************************** MediaQueries ***********************************/
 @media (min-width: 992px) {
 
   body {
     padding-top: 0;
-    padding-left: 17rem; 
+    padding-left: 17rem;
     /* 1rem = 16px , 16*17 = 272px*/
   }
   section.resume-section {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
   }
-  
+
+
   /* For NavBar */
   #sideNav {
     text-align: center;
@@ -152,7 +166,7 @@ a:hover, a:focus, a:active {
     background: #11998e;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+
   }
   #sideNav .navbar-brand {
     display: -webkit-box;

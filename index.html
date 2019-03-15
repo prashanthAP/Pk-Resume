@@ -55,13 +55,13 @@
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-        </li>        
+        </li>
       </ul>
     </div>
   </nav>
 
   <div class="container-fluid p-0">
-    
+
     <!-- AboutMe -->
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
       <div class="w-100">
@@ -79,7 +79,7 @@
           </a>
           <a title="github" href="https://github.com/" style="background-color:#24292e">
             <i class="fab fa-github"></i>
-          </a>          
+          </a>
           <a title="facebook" href="#" style="background-color:#4267b2">
             <i class="fab fa-facebook-f" ></i>
           </a>
@@ -118,7 +118,7 @@
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">UI Developer</h3>            
+            <h3 class="mb-0">UI Developer</h3>
             <div class="subheading">Mobisir.net, Bengaluru</div>
             <hr class="m-0 subheading-tagLine mb-3"/>
             <p class="text-justify">Handling Responsive web Developments Using Bootstrap and Google  Material  Design plus working experience in Ionic framework. Practiced experience in Adobe photoshop, and XD, Zeppelin, Justinmind.</p>
@@ -127,7 +127,7 @@
             <span class="text-primary">Feb 2016 - March 2018</span>
           </div>
         </div>
-        
+
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
           <div class="resume-content">
@@ -158,7 +158,7 @@
           <div class="resume-content">
             <h3 class="mb-0">IIIT- B (Under Radix Learning)</h3>
             <div class="subheading">PGDSD(Post Graduation Diplomo in Software Development)</div>
-            <hr class="m-0 subheading-tagLine mb-5"/>            
+            <hr class="m-0 subheading-tagLine mb-5"/>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">Feb 2015- Feb 2016 </span>
@@ -207,7 +207,7 @@
           </li>
           <li title="nodejs" class="list-inline-item">
             <i class="fab fa-node"></i>
-          </li>          
+          </li>
           <li title="gulp" class="list-inline-item">
             <i class="fab fa-gulp"></i>
           </li>
@@ -253,6 +253,7 @@
         <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
       </div>
     </section>
+    <i class="fas fa-chevron-circle-up" id="scrollBtn"></i>
   </div>
 
   <!-- Bootstrap core JavaScript -->
@@ -293,6 +294,24 @@
         });
 
       })(jQuery);
+
+      /*Scroll to top when arrow up clicked BEGIN*/
+      $(window).scroll(function() {
+        var height = $(window).scrollTop();
+        if (height > 100) {
+          $("#scrollBtn").fadeIn();
+        } else {
+          $("#scrollBtn").fadeOut();
+        }
+      });
+      $(document).ready(function() {
+        $("#scrollBtn").click(function(event) {
+          event.preventDefault();
+          $("html, body").animate({ scrollTop: 0 }, "slow");
+          return false;
+        });
+      });
+
   </script>
 
 </body>
